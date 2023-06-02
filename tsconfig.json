@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["DOM", "ESNext"],
+    "preserveSymlinks": true,
+    "importHelpers": true,
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "baseUrl": "./",
+    "strict": true,
+    "skipLibCheck": true,
+    "rootDir": ".",
+    "paths": {
+      "@orca-fe/demo-comp": ["./packages/demo-comp/src"]
+    },
+    "outDir": "./lib",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*", "packages/**/*", ".eslintrc.cjs", "checkDep.ts", ".dumi/**/*", ".dumirc.ts", "jest.config.cjs", "typings.d.ts"],
+  "exclude": ["node_modules", "lib", "es", "dist", "**/__test__", "test", "docs", "tests"],
+  "ts-node": {
+    "esm": true,
+    "compilerOptions": {
+      "module": "ESNext"
+    }
+  }
+}
