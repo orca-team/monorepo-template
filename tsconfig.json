@@ -4,7 +4,6 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "lib": ["DOM", "ESNext"],
-    "preserveSymlinks": true,
     "importHelpers": true,
     "jsx": "react-jsx",
     "allowJs": true,
@@ -22,8 +21,7 @@
     "outDir": "./lib",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src/**/*", "packages/**/*", ".eslintrc.cjs", "checkDep.ts", ".dumi/**/*", ".dumirc.ts", "jest.config.cjs", "typings.d.ts"],
-  "exclude": ["node_modules", "lib", "es", "dist", "**/__test__", "test", "docs", "tests"],
+  "include": ["src", "packages", ".eslintrc.cjs", "checkDep.ts", ".dumi/**/*", ".dumirc.ts", "jest.config.cjs", "typings.d.ts"],
   "ts-node": {
     "esm": true,
     "compilerOptions": {
